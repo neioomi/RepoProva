@@ -26,7 +26,6 @@ public class CarController {
     CsvReader csvReader;
 
 
-
     // ENDPOINTS
     @GetMapping("/getCarPlate/{plate}")  //RECUPERARE AUTO TRAMITE TARGA
     public ResponseEntity<Car> getCarByPlate(@PathVariable String plate) throws PlateNotFoundException {
